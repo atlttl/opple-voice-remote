@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# 签名文件不入库；口令在 local.properties（同样不入库）
+/app/keystore.jks

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="canvas">#14120F</color>
+    <color name="ic_launcher_background">#14120F</color>
+    <color name="ic_warm_bg">#0B0E17</color>
+    <color name="ic_blue_bg">#0A1A6E</color>
+</resources>
