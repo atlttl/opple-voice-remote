@@ -38,7 +38,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
@@ -47,7 +46,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.style.TextAlign
@@ -452,19 +451,14 @@ private fun PowerHalf(label: String, onClick: () -> Unit, modifier: Modifier = M
 @Composable
 fun RemoteBodySurface(content: @Composable () -> Unit) {
     val p = LocalPalette.current
-    val isDark = p.canvas.luminance() < 0.5f
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .shadow(
-                elevation = if (isDark) 0.dp else 14.dp,
-                shape = RoundedCornerShape(34.dp),
-                clip = false,
-            )
             .clip(RoundedCornerShape(34.dp))
+            // 渐变必须是实色：半透明会让底层的投影透出来，在圆角处形成暗斑
             .background(
                 Brush.verticalGradient(
-                    listOf(p.bodyHigh.copy(alpha = 0.85f), p.body, p.body)
+                    listOf(lerp(p.body, p.bodyHigh, 0.5f), p.body, p.body)
                 )
             )
             .border(1.dp, p.hairline, RoundedCornerShape(34.dp))

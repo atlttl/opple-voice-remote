@@ -386,7 +386,7 @@ fun SettingsSheet(
 
             // 关于
             SheetSection("关于") {
-                InfoRow("版本", "1.0.8 (9)")
+                InfoRow("版本", "1.0.9 (10)")
                 Spacer(Modifier.height(8.dp))
                 Text(
                     "口令词表：开灯 / 关灯 · 亮一点 / 暗一点 / 最亮 / 最暗 · 白一点 / 黄一点 / 白光 / 黄光 · 会客 / 娱乐 / 影院 / 夜灯模式 · 打开 / 关闭氛围光 · 延时关灯 · 安静模式",
