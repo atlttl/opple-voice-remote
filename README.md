@@ -97,9 +97,9 @@ app/src/main/java/com/opple/voiceremote/
 ## 交付物
 
 ```
-dist/OppleVoiceRemote-1.0.9.apk   已签名安装包
+dist/OppleVoiceRemote-1.1.0.apk   已签名安装包
 dist/icon-warm.png                Apple 图标（暖光，第一张上传原图）
-dist/icon-blue.png                Android 图标（蓝调，第二张上传原图，默认）
+dist/icon-android.png             Android 图标（暖光吊灯，默认）
 dist/preview-window.png           连续控制窗口与「清空」按钮
 dist/preview-dark.png             深色界面（单灯 + 加号）
 dist/preview-light.png            浅色界面（单灯 + 加号）

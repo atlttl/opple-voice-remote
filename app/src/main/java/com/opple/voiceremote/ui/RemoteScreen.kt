@@ -472,7 +472,7 @@ fun RemoteScreen(
 
             Spacer(Modifier.height(26.dp))
             Text(
-                "口令依据 OPPLE 第二代离线语音模块说明 · 1.0.9",
+                "口令依据 OPPLE 第二代离线语音模块说明 · 1.1.0",
                 style = MaterialTheme.typography.labelSmall.copy(fontSize = 9.sp, letterSpacing = 0.5.sp),
                 color = p.textFaint.copy(alpha = 0.7f),
                 textAlign = TextAlign.Center,

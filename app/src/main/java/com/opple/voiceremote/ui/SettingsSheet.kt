@@ -348,7 +348,7 @@ fun SettingsSheet(
                 Spacer(Modifier.height(10.dp))
                 Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     IconChoice(
-                        iconRes = R.drawable.ic_blue_preview,
+                        iconRes = R.drawable.ic_android_preview,
                         label = "Android",
                         selected = iconStyle == 0,
                     ) {
@@ -386,7 +386,7 @@ fun SettingsSheet(
 
             // 关于
             SheetSection("关于") {
-                InfoRow("版本", "1.0.9 (10)")
+                InfoRow("版本", "1.1.0 (11)")
                 Spacer(Modifier.height(8.dp))
                 Text(
                     "口令词表：开灯 / 关灯 · 亮一点 / 暗一点 / 最亮 / 最暗 · 白一点 / 黄一点 / 白光 / 黄光 · 会客 / 娱乐 / 影院 / 夜灯模式 · 打开 / 关闭氛围光 · 延时关灯 · 安静模式",

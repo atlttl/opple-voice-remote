@@ -3,5 +3,5 @@
     <color name="canvas">#14120F</color>
     <color name="ic_launcher_background">#14120F</color>
     <color name="ic_warm_bg">#0B0E17</color>
-    <color name="ic_blue_bg">#0A1A6E</color>
+    <color name="ic_android_bg">#000000</color>
 </resources>
